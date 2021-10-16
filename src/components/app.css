@@ -1,0 +1,159 @@
+/* - 1B1B1D (Black)  */
+/* Reset margin */
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    min-height: 400px;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    background-color: #2A2A2C;
+}
+
+.body-container {
+    background-color: #FFFFFF;
+}
+
+.footer-container {
+    background-color: #FB3E43;
+}
+
+/* Red Scroller */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #D8D8D8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FC3F44;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ad070c;
+}
+
+/* Scrollbar for firefox */
+body {
+    scrollbar-width: 7px;
+    scrollbar-color: #D8D8D8 #FC3F44;
+}
+
+/* Header Styles */
+
+.zeppeliner {
+    display: block;
+    margin: auto;
+    width: clamp(100px, 40%, 600px);
+}
+
+.content-box-header {
+    position: relative;
+    margin: auto;
+    padding: 0 1em;
+    max-width: 700px;
+}
+
+.header-main {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: clamp(1.6rem, 1rem + 4.2vw, 4rem);
+    margin-bottom: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.bullet-list {
+    font-size: clamp(12px, 0.6rem + 1.2vw, 40px);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    color: #FFFFFF;
+}
+
+.paragraf-main {
+    margin-top: 2em;
+    text-align: center;
+    font-size: clamp(10px, 0.42rem + 1.2vw, 40px);
+    color: #FFFFFF;
+    font-weight:100;
+}
+
+.prevent-overlap{
+    min-height: 120px;
+}
+
+
+
+
+
+
+/* Body Styles */
+
+/* Make media query?
+.content-box-body{
+    
+} 
+
+*/
+
+.body-section-container{
+    margin-bottom: 2em;
+}
+
+.header-second {
+    margin: 3em 0 2em 0;
+    text-align: center;
+    font-size: clamp(1.2rem, 1rem + 2vw, 3rem);
+    color: #2A2A2C;
+}
+
+.header-third {
+    font-size: clamp(12px, 0.6rem + 1.2vw, 40px);
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 0 1em 0;
+    color: #2A2A2C;
+}
+
+.paragraf-second{
+    font-size: clamp(10px, 0.45rem + 1.2vw, 40px);
+    text-align: center;
+    color: #2A2A2C;
+}
+
+.body-section{
+    width: clamp(200px, 40%, 600px);
+    margin: auto;
+    /* Also here margin: */
+}
+
+.illustration {
+    display: block;
+    margin: auto;
+    width: clamp(100px, 30%, 600px);
+}
+
+
+/* Media query */
+
+
+
+/* Footer content */
+
+.prize{
+    display: block;
+    margin: auto;
+    width: clamp(50px, 7%, 100px);
+}
