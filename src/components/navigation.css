@@ -3,13 +3,14 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  background-color: rgb(42, 42, 44, 0.2); 
 }
 
 .logo-button {
-  margin: 2% 2%;
+  margin: 1% 1%;
   width: clamp(10px, 8%, 60px);
   cursor: pointer;
-  background-color: rgb(42, 42, 44);
+  background-color: transparent;
 }
 
 .logo {
@@ -59,5 +60,5 @@
 }
 
 .dropdown-content a:focus {
-  background-color: rgb(170, 170, 170);
+  background-color: rgb(95, 95, 95);
 }

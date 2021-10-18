@@ -14,11 +14,12 @@ export const App: React.FC = () => {
   return (
     <div className="App">
 
-      {/* Navigation Bar */}
-      
+      {/* NAVIGATION Bar */}
       <Navigation />
 
-      {/* HEADER PART */}
+      {/* HEADER CONTENT*/}
+      <a href="/" id="hyperlink-header" />
+
       <div className="container header-container">
         <div className="content-box-header">
           <Zeppliner className="zeppeliner" />
@@ -37,9 +38,9 @@ export const App: React.FC = () => {
         <Start />
       </div>
 
-
-      {/* BODY PART */}
-
+      <a/>
+      {/* BODY CONTENT */}
+      <a href="/" id="hyperlink-body" />
 
       <div className="container body-container">
         <h2 className="header-second text-dark">Vi kan hjælpe dig med <br /> digital transformation på to fronter</h2>
@@ -67,9 +68,9 @@ export const App: React.FC = () => {
         </div>
       </div>
 
-
-      {/* FOOTER */}
-
+      <a/>
+      {/* FOOTER CONTENT*/}
+      <a href="/" id="hyperlink-footer" />
 
       <div className="container footer-container">
         <h2 className="header-second text-white">Få 10 gode råd om <br /> digital transformation</h2>
@@ -83,6 +84,9 @@ export const App: React.FC = () => {
           </p>
         </div>
       </div>
+      <a/>
+
+      
     </div>
   );
 }

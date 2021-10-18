@@ -33,9 +33,9 @@ export const Form: React.FC = () => {
             <form className="form" onSubmit={handleSubmit(onSubmit)}>
                 <input className="form-input form-name" type="text" placeholder="* Name" {...register("name", { required: "* Please type your name" })} />
 
-                <input className="form-input" type="text" placeholder="* Email" {...register("email", { pattern: emailReg })} />
+                <input className="form-input" type="text" placeholder="* Email" {...register("email", { required: true, pattern: emailReg })} />
 
-                <input className="form-input" type="tel" placeholder="* Mobil" {...register("phone", { pattern: phoneReg })} />
+                <input className="form-input" type="tel" placeholder="* Mobil" {...register("phone", { required: true, pattern: phoneReg })} />
 
                 <input className="form-input" type="text" placeholder="Postnr" {...register("code")} />
 
