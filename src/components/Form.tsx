@@ -22,7 +22,8 @@ export const Form: React.FC = () => {
     const onSubmit = (data: User): void => {
         console.log(data);
         alert("Thanks for your interest in Pentia! We will get back to you as soon as possible");
-        //send data to a server.
+        const form = document.getElementById("form");
+        if(form) (form as HTMLFormElement).reset(); 
     }
 
     const emailReg = /^[^@\s]+@[^@\s\.]+\.[^@\.\s]+$/;
@@ -30,7 +31,7 @@ export const Form: React.FC = () => {
 
     return (
         <div className="grid-container">
-            <form className="form" onSubmit={handleSubmit(onSubmit)}>
+            <form className="form" id="form" onSubmit={handleSubmit(onSubmit)}>
                 <input className="form-input form-name" type="text" placeholder="* Name" {...register("name", { required: "* Please type your name" })} />
 
                 <input className="form-input" type="text" placeholder="* Email" {...register("email", { required: true, pattern: emailReg })} />
