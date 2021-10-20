@@ -16,7 +16,6 @@ export const App: React.FC = () => {
 
       {/* NAVIGATION Bar */}
 
-
       <Navigation />
 
       {/* HEADER CONTENT*/}
@@ -50,10 +49,6 @@ export const App: React.FC = () => {
       <div className="container body-container">
         <h2 className="header-second text-dark">Vi kan hjælpe dig med <br /> digital transformation på to fronter</h2>
         <div className="content-box-body">
-
-          {/* Ville Nok lave til en component også hvis det var fra en database
-           <SectionComponent image="Illustration.svg" title="Strategisk rådgivning" content=""/>
-           Meget ecommerce agtigt*/}
 
           <section className="body-section">
             <div className="body-section-container">
