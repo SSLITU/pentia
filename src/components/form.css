@@ -75,6 +75,7 @@
         margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        -ms-grid-columns: 1fr 1fr;
         max-width: 30em;
         gap: 1.5em;
     }
@@ -86,10 +87,12 @@
     
     form input:nth-child(1) {
         grid-column: span 2;
+        -ms-grid-columns: span 2;
     }
 
     form input:last-child{
         grid-column: span 2;
+        -ms-grid-columns: span 2;
     }
 
     form p:first-of-type{

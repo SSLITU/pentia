@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
 import './app.css';
@@ -9,16 +10,18 @@ import { ReactComponent as Illustration1 } from '../assets/illustration1.svg';
 import { ReactComponent as Illustration2 } from '../assets/illustration2.svg';
 import { ReactComponent as Prize } from '../assets/prize.svg';
 
-
 export const App: React.FC = () => {
   return (
     <div className="App">
 
       {/* NAVIGATION Bar */}
+
+
       <Navigation />
 
       {/* HEADER CONTENT*/}
-      <a href="/" id="hyperlink-header" />
+
+      <a href="/#" id="hyperlink-header" />
 
       <div className="container header-container">
         <div className="content-box-header">
@@ -39,12 +42,19 @@ export const App: React.FC = () => {
       </div>
 
       <a/>
+
       {/* BODY CONTENT */}
-      <a href="/" id="hyperlink-body" />
+
+      <a href="/#" id="hyperlink-body" />
 
       <div className="container body-container">
         <h2 className="header-second text-dark">Vi kan hjælpe dig med <br /> digital transformation på to fronter</h2>
         <div className="content-box-body">
+
+          {/* Ville Nok lave til en component også hvis det var fra en database
+           <SectionComponent image="Illustration.svg" title="Strategisk rådgivning" content=""/>
+           Meget ecommerce agtigt*/}
+
           <section className="body-section">
             <div className="body-section-container">
               <Illustration1 className="illustration illustration-1" />
@@ -70,7 +80,7 @@ export const App: React.FC = () => {
 
       <a/>
       {/* FOOTER CONTENT*/}
-      <a href="/" id="hyperlink-footer" />
+      <a href="/#" id="hyperlink-footer" />
 
       <div className="container footer-container">
         <h2 className="header-second text-white">Få 10 gode råd om <br /> digital transformation</h2>

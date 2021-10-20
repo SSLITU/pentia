@@ -16,23 +16,31 @@ type User = {
     city?: City;
 }
 
+interface UserObject {
+    [key: string]: User;
+}
+
 export const Form: React.FC = () => {
     const { register, handleSubmit, formState: { errors } } = useForm<User>();
-
-    const onSubmit = (data: User): void => {
-        console.log(data);
-        alert("Thanks for your interest in Pentia! We will get back to you as soon as possible");
-        const form = document.getElementById("form");
-        if(form) (form as HTMLFormElement).reset(); 
-    }
-
+    
     const emailReg = /^[^@\s]+@[^@\s\.]+\.[^@\.\s]+$/;
     const phoneReg = /\d{8}/;
+
+    const onSubmit = (data: User) => {
+        console.log(data);
+        alert("Thank for your interest in Pentia! We will get back to you as soon as possible");
+        // Send To Server Or Cloud
+
+        const form = document.getElementById("form");
+        if (form) (form as HTMLFormElement).reset();
+        
+    }
 
     return (
         <div className="grid-container">
             <form className="form" id="form" onSubmit={handleSubmit(onSubmit)}>
-                <input className="form-input form-name" type="text" placeholder="* Name" {...register("name", { required: "* Please type your name" })} />
+
+                <input className="form-input" type="text" placeholder="* Name" {...register("name", { required: "* Please type your name" })} />
 
                 <input className="form-input" type="text" placeholder="* Email" {...register("email", { required: true, pattern: emailReg })} />
 
